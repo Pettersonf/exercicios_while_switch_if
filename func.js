@@ -57,7 +57,11 @@ console.log (compareTwoNumebers())
 
 function factorial (num){
 let resultado = 1;
+let message = "Valor inválido";
 
+    if (num <= 0 || num > 10){
+        return message;
+    }
 
             while (num >=1 && num <=10){
                 resultado = resultado * num;
@@ -67,7 +71,7 @@ let resultado = 1;
                return resultado;
     
 }
-console.log (factorial(5)); //teste
+console.log (factorial(11)); //teste
 
 
 function monthOfYear (value){
